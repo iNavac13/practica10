@@ -11,5 +11,5 @@ app.get('/api', function (req, res) {
 })
 
 app.get('/person/:id', function (req, res) {
-    res.json('<html><head></head><body>Person:' + req.params.id +'</body></html>')
+    res.send('<html><head></head><body>Person:' + req.params.id +'</body></html>')
 })
